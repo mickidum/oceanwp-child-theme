@@ -9,3 +9,254 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+.elementor-page-573 section:not(:first-child) {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.social-icons-block {
+	min-width: 140px;
+}
+
+#site-navigation-wrap .dropdown-menu >li.sfHover >a {
+  background-color: #f08200;
+	color: #fff;
+}
+
+#site-navigation-wrap {
+	padding: 20px 0;
+}
+
+#site-navigation li a {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+#site-navigation li a .text-wrap {
+	white-space: normal;
+}
+
+.oceanwp-mobile-menu-icon {
+	text-align: left;
+
+}
+.oceanwp-mobile-menu-icon a.mobile-menu {
+	font-size: 17px !important;
+	color: #000;
+}
+
+.switcher .lang-item {
+    display: inline;
+    list-style: none;
+    text-transform: lowercase;
+    margin: 0 5px;
+}
+
+.switcher .lang-item a > span {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.switcher .lang-item.current-lang a > span {
+	
+}
+
+
+.switcher ul .lang-item img, .sidr-class-lang-item img {
+	box-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+	vertical-align: middle;
+}
+
+.switcher ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+}
+
+.sidr-class-lang-item img {
+	max-width: 20px;
+	
+}
+.sidr-class-lang-item span {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#top-bar-wrap {
+	border-bottom: none;
+}
+
+.rtl [type="email"], .rtl [type="tel"] {
+	direction: ltr;
+}
+.rtl [type="email"]::placeholder, .rtl [type="tel"]::placeholder {
+	text-align: right;
+}
+
+.contact-page-form input, .contact-page-form textarea {
+	border-color: #cca876 !important;
+	/*border-color: #0083cb !important;*/
+	border-width: 2px !important;
+}
+.contact-page-form input::placeholder, .contact-page-form textarea::placeholder {
+	color: black;
+}
+
+.landing-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	
+}
+.landing-footer li {
+	text-align: center;
+}
+.landing-footer li a {
+	font-size: 22px;
+	padding: 4px 0;
+	display: inline-block;
+}
+
+.elementor-widget.video-header-ttl:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+/*CONTACT FORM*/
+.home .wpcf7-submit, .landing .wpcf7-submit {
+	font-size: 20px;
+	font-weight: 400;
+	background: red;
+	width: 100%;
+}
+.cont-forma  .wpcf7-submit {
+	font-size: 18px;
+	background: #0083cb;
+	font-weight: 400;
+}
+
+#scroll-top {
+    right: 20px;
+    left: auto;
+}
+
+@media (min-width: 1024px) {
+	#waze-icon {
+		display: none;
+	}
+}
+
+.icons-text li {
+	margin-bottom: 30px;
+}
+
+/*.icons-text p {
+	padding-right: 25px;
+}*/
+/*.icons-text img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -39px;
+}*/
+
+
+/* Responsive */ @media (max-width: 767px) {     .elementor-element.custom-
+icon-boxes .elementor-widget-container { margin: 0; } 
+.hide-bg {
+	background: none !important;
+}
+.timerid .elementor-column-wrap.elementor-element-populated {
+	border: none !important;
+}
+#top-bar-social {
+	display: none;
+}
+#top-bar-social li:last-child a {
+  padding: 0 15px 0 15px !important;
+  margin-top: 20px;
+}
+#mic-init-access-tool {
+	display: none;
+}
+#scroll-top {
+  right: 10px;
+  bottom: 8px;
+  width: 35px;
+  height: 35px;
+  line-height: 34px;
+  font-size: 20px;
+}
+}
+
+
+@media screen and (min-width: 767px) {
+	#outer-wrap.fixed-header {
+		margin-top: 84px;
+	}
+
+	#outer-wrap.fixed-header #site-header {
+		position: fixed;
+	  top: 0;
+	  right: 0;
+	  width: 100%;
+	  z-index: 50;
+	  animation-name: headerfixin;
+		animation-duration: 0.4s;
+		animation-fill-mode: both;
+		animation-timing-function: ease-in-out;
+		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.landing-footer li {
+		display: inline-block;
+		margin-left: 5px;
+		vertical-align: bottom;
+	}
+	.landing-footer li:not(:last-child)::after {
+		content: "|";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px;
+		color: black;
+	}
+	.landing-footer li a {
+		font-size: 20px;
+	}
+
+	@keyframes headerfixin {
+		0% {
+			/*opacity: 0;*/
+			transform: translateY(-100%);
+		}
+	}
+}
+
+@media screen and (max-width: 760px) {
+	#top-bar-wrap {
+		z-index: 0;
+	}
+	#top-bar-social-alt {
+		float: right;
+	}
+	#top-bar-content {
+		display: none;
+	}
+	#top-bar {
+		padding: 10px 0 12px !important;
+		margin: 0;
+	}
+	#site-header.medium-header .oceanwp-mobile-menu-icon {
+		display: inline-block;
+    position: absolute;
+    top: -50px;
+    left: 5px !important;
+    z-index: 10000000;
+    background: transparent !important;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.animal-bg , .elementor-background-overlay{
+		background: none !important;
+	}
+}
+
+

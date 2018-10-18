@@ -25,6 +25,8 @@ function oceanwp_child_enqueue_parent_style() {
 	$version = $theme->get( 'Version' );
 	// Load the stylesheet
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
-	
+	wp_enqueue_script( 'waypoints-script', get_stylesheet_directory_uri() . '/assets/waypoints/lib/noframework.waypoints.min.js', array( 'oceanwp-main' ), '', true );
+	wp_enqueue_script( 'hooks-script', get_stylesheet_directory_uri() . '/assets/js/hooks.js', array( 'waypoints-script' ), '', true );
+	// wp_enqueue_script( 'accessibility', 'https://cdn.rawgit.com/mickidum/acc_toolbar/18cf6814/acctoolbar/acctoolbar.min.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
