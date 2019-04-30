@@ -9,10 +9,7 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
-.elementor-page-573 section:not(:first-child) {
-	max-width: 960px;
-	margin: 0 auto;
-}
+
 .social-icons-block {
 	min-width: 140px;
 }
